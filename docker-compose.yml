@@ -37,9 +37,13 @@ services:
     environment:
       DATOMIC_HOST: "datomic-transactor"
       DATOMIC_ALT_HOST: "acc-text-api"
+    #command: ls -l /srv/datomic/ 
+    command: /srv/datomic/docker-entrypoint-datomic.sh
+    entrypoint: ""
     volumes:
       - datomic:/srv/datomic/data
       - ./transactor-logback.xml:/srv/datomic/bin/logback.xml
+      - ./docker-entrypoint-datomic.sh:/srv/datomic/docker-entrypoint-datomic.sh
 
 networks:
   default:
