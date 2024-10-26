@@ -26,3 +26,5 @@ api/server
 front-end/*.log
 front-end/dist
 node_modules
+# General .gitignore template
+.DS_Store
