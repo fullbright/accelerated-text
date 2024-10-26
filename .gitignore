@@ -28,3 +28,5 @@ front-end/dist
 node_modules
 # General .gitignore template
 .DS_Store
+# General .gitignore template
+.DS_Store
